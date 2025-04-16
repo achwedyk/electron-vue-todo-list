@@ -1,5 +1,15 @@
 # Electron + Vue To-do List
 
+## Prerequisites
+
+Install proper version of Node.js (check in `.nvmrc` or `package.json`).
+
+If using nvm:
+
+```sh
+nvm use
+```
+
 ## Project Setup
 
 ```sh
