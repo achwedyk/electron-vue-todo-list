@@ -3,8 +3,9 @@
   --vt-c-white: #ffffff;
   --vt-c-purple-darken-4: #4a148c;
   --vt-c-purple-light-5: #f3e5f5;
+  --vt-c-deep-purple: #311B92;
 
-  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text: var(--vt-c-deep-purple);
 }
 
 /* semantic color variables for this project */
@@ -14,7 +15,7 @@
   --color-background-accent: var(--vt-c-purple-light-5);
 
   --color-heading: var(--vt-c-purple-darken-4);
-  --color-text: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text);
 
   --section-gap: 160px;
 }

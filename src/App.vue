@@ -1,5 +1,6 @@
 <script setup>
 import Hero from './components/Hero.vue'
+import TodoList from './components/TodoList.vue'
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import Hero from './components/Hero.vue'
   </header>
 
   <main>
+    <TodoList />
   </main>
 </template>
 
@@ -16,5 +18,9 @@ header {
   line-height: 1.5;
   padding: 1rem;
   background: var(--color-background-accent);
+}
+
+main {
+  padding: 1rem;
 }
 </style>
