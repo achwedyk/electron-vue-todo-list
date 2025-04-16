@@ -4,18 +4,18 @@ export default {
   props: {
     text: {
       type: String,
-      required: true
+      required: true,
     },
     completed: {
       type: Boolean,
-      required: true
-    }
+      required: true,
+    },
   },
   methods: {
     toggle() {
       this.$emit('toggle')
-    }
-  }
+    },
+  },
 }
 </script>
 

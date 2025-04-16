@@ -6,13 +6,11 @@ export default {
   name: 'TodoList',
   components: {
     TodoItem,
-    TodoInput
+    TodoInput,
   },
   data() {
     return {
-      todos: [
-        { text: 'Smile today', completed: true }
-      ]
+      todos: [{ text: 'Smile today', completed: true }],
     }
   },
   methods: {
@@ -23,8 +21,8 @@ export default {
       if (text.trim()) {
         this.todos.push({ text, completed: false })
       }
-    }
-  }
+    },
+  },
 }
 </script>
 

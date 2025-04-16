@@ -3,7 +3,7 @@ export default {
   name: 'TodoInput',
   data() {
     return {
-      inputValue: ''
+      inputValue: '',
     }
   },
   methods: {
@@ -12,8 +12,8 @@ export default {
         this.$emit('add', this.inputValue)
         this.inputValue = ''
       }
-    }
-  }
+    },
+  },
 }
 </script>
 
