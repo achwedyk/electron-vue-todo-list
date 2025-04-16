@@ -1,13 +1,5 @@
 # Electron + Vue To-do List
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
 ## Project Setup
 
 ```sh
@@ -20,10 +12,12 @@ npm install
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Run Electron app
+
+In a separate terminal run:
 
 ```sh
-npm run build
+npm run start
 ```
 
 ### Run Unit Tests with [Vitest](https://vitest.dev/)
