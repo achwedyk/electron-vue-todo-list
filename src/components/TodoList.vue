@@ -10,17 +10,29 @@ export default {
   },
   data() {
     return {
-      todos: [{ text: 'Smile today', completed: true }],
+      todos: [],
     }
+  },
+  async created() {
+    this.todos = await window.electron.loadTodos()
   },
   methods: {
     toggleTodo(index) {
       this.todos[index].completed = !this.todos[index].completed
+      this.saveTodos()
     },
     addTodo(text) {
       if (text.trim()) {
         this.todos.push({ text, completed: false })
+        this.saveTodos()
       }
+    },
+    async saveTodos() {
+      const todosToSave = this.todos.map((todo) => ({
+        text: todo.text,
+        completed: todo.completed,
+      }))
+      await window.electron.saveTodos(todosToSave)
     },
   },
 }
